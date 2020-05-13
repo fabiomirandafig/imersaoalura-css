@@ -9,9 +9,9 @@ body {
   //background:green;
   background-image:url(https://i2.wp.com/onaircode.com/wp-content/uploads/2017/11/Tesselation-Transition.jpg?resize=948%2C527&ssl=1);
   background-size:auto 100vh;
-  font-family:Arial;
+  font-family: 'Source Code Pro', monospace; 
   height:100vh;
-  font-size:10px;
+  font-size:12px;
 }
 
 /*se a tela tiver pelo menos 400px vai carregar estes estilos*/
@@ -30,7 +30,7 @@ body {
 
 
 /*breakpoint*/
-@media (min-width: 1000px){
+@media (min-width: 1200px){
   body{
     font-size: 20px;
     //background-image: none;
@@ -84,13 +84,54 @@ a:hover{
 
 .site-title{
   font-size: 4em;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 .site-subtitle{
   font-style:italic;
+  font-family: 'Press Start 2P', cursive;
+  line-height: 1.8em;
+}
+
+.portfolio{
+  padding:2em;
+  height: 100vh;
+}
+
+.portfolio h2{
+  font-family: 'Press Start 2P', cursive;
+  color:whitesmoke;
+  margin-bottom: 1.5em;
+  font-size: 2em;
+}
+
+.portfolio .grid {
+  display: grid;/*flex cria colunas automaticamente e grid eu escolho a quantidade de colunas*/
+  gap: 2em; 
+}
+
+@media (min-width: 560px){
+  .portfolio .grid{
+    grid-template-columns: 240px 240px;
+  }
+}
+
+@media (min-width: 880px){
+  .portfolio .grid{
+    grid-template-columns: repeat(3,260px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh - 4em - 48px - 1.5em);
+  }
+}
+
+.portfolio figure{
+  text-align: center;
 }
 
 .img-portfolio{
   height: 180px;
-  width: 180px;
+  width: 240px;
+  object-fit: cover;
+  object-position: left bottom;
 }
