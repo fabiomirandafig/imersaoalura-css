@@ -13,11 +13,11 @@
 <body>
     <header>
         <nav class="menu">
-            <ul>
+            <ul class="container">
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#portfolio">Projetos</a></li>
                 <li><a href="#contato">Contato</a></li>
-          </ul>
+            </ul>
         </nav>
         <div class="titulo">
             <h1 class="site-title">Fábio Miranda</h1>
@@ -25,17 +25,51 @@
             <h2 class="site-subtitle">sr. email responder</h2>
         </div>
     </header> 
-    <section class="portfolio" id="portfolio">
+    <section class="sobre container">
+        <h2>Sobre</h2>
+        <figure class="avatar">
+            <img src="https://pbs.twimg.com/profile_images/1258812955778564097/8qhs0Lg-_400x400.jpg" alt="Fábio Miranda">
+        </figure>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro dolores corrupti! Aliquid fuga ab, sed, accusamus minus distinctio dolorem optio sapiente debitis dignissimos voluptatibus voluptas eum qui officiis ipsam.
+        </p>
+        <p>
+            Nesciunt, accusamus ullam, recusandae dignissimos modi obcaecati suscipit maiores at a natus accusantium libero, pariatur reiciendis harum incidunt blanditiis doloremque dolores. Vel autem voluptate consectetur facilis, nemo id dicta tempore?
+        </p>
+        <p>
+            Eum est, quam sint autem culpa mollitia nesciunt maiores delectus doloremque porro! Consequatur itaque architecto suscipit alias vel fugiat mollitia incidunt officiis magni autem, modi, culpa tempora, facilis cum repellendus?
+        </p>
+        <p>
+            Esse site foi construído durante a <a href="https://www.alura.com.br/imersao-css">Imersão CSS da Alura</a>
+        </p>
+    </section>
+    <section class="portfolio container" id="portfolio">
         <h2>Projetos</h2>
         <div class="grid">
-            <figure>
-                <img class="img-portfolio" src="./img/alura.png" alt="Alura">
-                <figcaption>Alura</figcaption>
-            </figure>
-            <figure>
-                <img class="img-portfolio" src="./img/caelum.png" alt=">Caelum">
-                <figcaption>Caelum</figcaption>
-            </figure>
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front">
+                        <img class="img-portfolio" src="./img/alura.png" alt="Alura">
+                        <figcaption>Alura</figcaption>
+                    </figure>
+                    <div class="card-back">
+                        Parte de trás.
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="card">
+                    <figure class="card-front"> 
+                        <img class="img-portfolio" src="./img/caelum.png" alt=">Caelum">
+                        <figcaption>Caelum</figcaption>
+                    </figure>
+                    <div class="card-back">
+                        Parte de trás.
+                    </div>
+                </div>
+            </div>
+
             <figure>
                 <img class="img-portfolio" src="./img/hispters.png" alt="Hipsters.Tech">
                 <figcaption>Hipsters.Tech</figcaption>
@@ -50,7 +84,7 @@
             </figure>
         </div>
     </section>  
-    <section class="contato" id="contato">
+    <section class="contato container" id="contato">
 		<h2>Contato</h2>
 	
 		<div class="grid icons">
